@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= render partial: "partials/head" %>
+  <%= yield(:head) %> 
+
+  <body>
+    <!-- <%= render partial: "partials/alert" %> -->
+
+    <!-- END nav -->
+    
+
+    <!-- END slider -->
+
+    <%= yield %>
+
+    <%= render partial: "partials/footer" %>
+    
+  
+
+  <!-- loader -->
+
+
+ <%= render partial: "partials/script" %>
+    
+  </body>
+</html>

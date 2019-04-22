@@ -1,0 +1,58 @@
+<% provide(:paket_nama, @paket.nama) %>
+<%= render partial: "partials/navadmin" %>
+
+<section class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image: url('images/jakarta-hidden-tour.jpg');">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row slider-text align-items-center">
+              <div class="col-md-7 col-sm-12">
+                <h1 class="mb-3">Help Them </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="ftco-section bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8" style="background-color: white;">
+                    <h2 class="mb-3"><%= @paket.nama %></h2>                    
+                    <%= @paket.deskripsi %> <br> <br>    
+                </div>
+                <div class="col-md-4 sidebar" >
+                        <div class="sidebar-box" style="padding: 0; margin-left: 18px;">
+                            <div class="row justify-content-center align-items-center" style="padding: 1em; background-color: #ff5f5f; text-align:center; opacity: .8;">
+                                <h3 style="color: white;">Harga </h3>
+                            </div>
+                            <div class="row justify-content-center align-items-center" style="padding: 2em; background-color: #ff5f5f;">
+                                <h1 class="mb-3" style="color: white;">US$. <%= @paket.harga %></h1>
+                            </div>                    
+                            <div class="row justify-content-center align-items-center" style="padding: 2em; background-color: white;">
+                                <button class="btn btn-default btn-primary">Book Now</button>
+                            </div>  
+                        </div>
+                        <div class="sidebar-box">
+                          <div class="categories">
+                            <h3>Why Book With Us?</h3>
+                            <li>Trusted and experienced local guides<span></span></li>                            
+                            <li>Hassle-free booking and attentive customer service<span></span></li>                            
+                            <li>Flexible depatures and customisable itineraries<span></span></li>                                                                            
+                          </div>
+                        </div>
+            
+                        <div class="sidebar-box">
+                          <h3>Tag</h3>
+                          <div class="tagcloud">
+                            <a href="#" class="tag-cloud-link">Hidden Tourism</a>
+                            <a href="#" class="tag-cloud-link">Exotic Culinary</a>
+                            <a href="#" class="tag-cloud-link">Adventure</a>
+                            <a href="#" class="tag-cloud-link">Travel</a>
+                            <a href="#" class="tag-cloud-link">Life</a>                            
+                          </div>
+                        </div>
+          
+          </section> <!-- .section -->   
+
